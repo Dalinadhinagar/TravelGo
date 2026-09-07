@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TravelGo - Explore the World</title>
+    <title>TravelGo - Home</title>
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,14 +15,14 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
         <div class="container">
 
-            <a class="navbar-brand fw-bold" href="#home">
+            <a class="navbar-brand fw-bold" href="index.html">
                 ✈️ TravelGo
             </a>
 
-            <button
-                class="navbar-toggler"
+            <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarMenu">
@@ -38,19 +36,23 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#destinations">Destinations</a>
+                        <a class="nav-link" href="destinations.html">Destinations</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#packages">Packages</a>
+                        <a class="nav-link" href="packages.html">Packages</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
 
                 </ul>
@@ -58,10 +60,11 @@
             </div>
 
         </div>
+
     </nav>
 
 
-    <section id="home" class="hero">
+    <section class="hero">
 
         <div class="hero-content">
 
@@ -74,12 +77,12 @@
             </h1>
 
             <p class="hero-text">
-                Discover amazing places and create
-                unforgettable memories.
+                Discover beautiful places, exciting adventures
+                and unforgettable memories.
             </p>
 
-            <a href="#destinations" class="btn explore-btn">
-                Explore Now ✈️
+            <a href="destinations.html" class="btn explore-btn">
+                Explore Destinations ✈️
             </a>
 
         </div>
@@ -87,155 +90,80 @@
     </section>
 
 
-    <section id="destinations" class="section">
+    <section class="section">
 
         <div class="container">
 
             <h2 class="section-title">
-                Popular Destinations 🌍
+                Why Travel With Us? 💜
             </h2>
 
             <p class="section-description">
-                Discover some of the most beautiful places
-                around the world.
+                We make your travel experience simple and memorable.
             </p>
 
             <div class="row g-4">
 
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-4">
 
-                    <div class="card destination-card">
+                    <div class="feature-card">
 
-                        <img
-                            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80"
-                            class="card-img-top"
-                            alt="Bali">
-
-                        <div class="card-body">
-
-                            <h5 class="card-title">
-                                🌴 Bali
-                            </h5>
-
-                            <p class="card-text">
-                                Beautiful beaches, tropical views
-                                and relaxing resorts.
-                            </p>
-
-                            <button
-                                class="btn view-btn"
-                                onclick="showDestination('Bali')">
-
-                                View More
-
-                            </button>
-
+                        <div class="feature-icon">
+                            🌍
                         </div>
+
+                        <h4>
+                            Amazing Destinations
+                        </h4>
+
+                        <p>
+                            Explore beautiful destinations
+                            around the world.
+                        </p>
 
                     </div>
 
                 </div>
 
 
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-4">
 
-                    <div class="card destination-card">
+                    <div class="feature-card">
 
-                        <img
-                            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80"
-                            class="card-img-top"
-                            alt="Paris">
-
-                        <div class="card-body">
-
-                            <h5 class="card-title">
-                                🗼 Paris
-                            </h5>
-
-                            <p class="card-text">
-                                Experience art, culture and
-                                the famous Eiffel Tower.
-                            </p>
-
-                            <button
-                                class="btn view-btn"
-                                onclick="showDestination('Paris')">
-
-                                View More
-
-                            </button>
-
+                        <div class="feature-icon">
+                            💰
                         </div>
+
+                        <h4>
+                            Affordable Packages
+                        </h4>
+
+                        <p>
+                            Choose travel packages that
+                            suit your budget.
+                        </p>
 
                     </div>
 
                 </div>
 
 
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-4">
 
-                    <div class="card destination-card">
+                    <div class="feature-card">
 
-                        <img
-                            src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=600&q=80"
-                            class="card-img-top"
-                            alt="Switzerland">
-
-                        <div class="card-body">
-
-                            <h5 class="card-title">
-                                🏔️ Switzerland
-                            </h5>
-
-                            <p class="card-text">
-                                Enjoy beautiful mountains,
-                                snow and peaceful scenery.
-                            </p>
-
-                            <button
-                                class="btn view-btn"
-                                onclick="showDestination('Switzerland')">
-
-                                View More
-
-                            </button>
-
+                        <div class="feature-icon">
+                            🤝
                         </div>
 
-                    </div>
+                        <h4>
+                            Easy Booking
+                        </h4>
 
-                </div>
-
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card destination-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=600&q=80"
-                            class="card-img-top"
-                            alt="Maldives">
-
-                        <div class="card-body">
-
-                            <h5 class="card-title">
-                                🏝️ Maldives
-                            </h5>
-
-                            <p class="card-text">
-                                Relax on beautiful beaches
-                                with crystal-clear water.
-                            </p>
-
-                            <button
-                                class="btn view-btn"
-                                onclick="showDestination('Maldives')">
-
-                                View More
-
-                            </button>
-
-                        </div>
+                        <p>
+                            Plan your trip easily with
+                            our simple booking system.
+                        </p>
 
                     </div>
 
@@ -248,252 +176,22 @@
     </section>
 
 
-    <section id="packages" class="packages">
+    <section class="home-highlight">
 
-        <div class="container">
+        <div class="container text-center">
 
-            <h2 class="section-title">
-                Travel Packages 💜
+            <h2>
+                Ready For Your Next Adventure? ✈️
             </h2>
 
-            <p class="section-description">
-                Choose a package that suits your travel plans.
+            <p>
+                Find your perfect destination and start
+                planning your journey today.
             </p>
 
-            <div class="row g-4 justify-content-center">
-
-                <div class="col-md-4">
-
-                    <div class="package-card">
-
-                        <h3>
-                            🌱 Basic
-                        </h3>
-
-                        <h4>
-                            ₹9,999
-                        </h4>
-
-                        <p>
-                            3 Days / 2 Nights
-                        </p>
-
-                        <hr>
-
-                        <p>✔ Hotel Stay</p>
-                        <p>✔ Local Sightseeing</p>
-                        <p>✔ Breakfast</p>
-
-                        <a
-                            href="#contact"
-                            class="btn package-btn">
-
-                            Book Now
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-4">
-
-                    <div class="package-card popular">
-
-                        <span class="popular-label">
-                            POPULAR
-                        </span>
-
-                        <h3>
-                            ⭐ Standard
-                        </h3>
-
-                        <h4>
-                            ₹19,999
-                        </h4>
-
-                        <p>
-                            5 Days / 4 Nights
-                        </p>
-
-                        <hr>
-
-                        <p>✔ Hotel Stay</p>
-                        <p>✔ Sightseeing</p>
-                        <p>✔ Breakfast & Dinner</p>
-
-                        <a
-                            href="#contact"
-                            class="btn package-btn">
-
-                            Book Now
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-4">
-
-                    <div class="package-card">
-
-                        <h3>
-                            👑 Premium
-                        </h3>
-
-                        <h4>
-                            ₹29,999
-                        </h4>
-
-                        <p>
-                            7 Days / 6 Nights
-                        </p>
-
-                        <hr>
-
-                        <p>✔ Luxury Hotel</p>
-                        <p>✔ Private Tour</p>
-                        <p>✔ All Meals</p>
-
-                        <a
-                            href="#contact"
-                            class="btn package-btn">
-
-                            Book Now
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="contact" class="contact-section">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Plan Your Trip ✈️
-            </h2>
-
-            <p class="section-description">
-                Fill in the form to send us your travel request.
-            </p>
-
-            <div class="contact-box">
-
-                <form id="bookingForm">
-
-                    <div class="mb-3">
-
-                        <label for="name" class="form-label">
-                            Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            class="form-control"
-                            placeholder="Enter your name">
-
-                    </div>
-
-
-                    <div class="mb-3">
-
-                        <label for="email" class="form-label">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            class="form-control"
-                            placeholder="Enter your email">
-
-                    </div>
-
-
-                    <div class="mb-3">
-
-                        <label for="destination" class="form-label">
-                            Destination
-                        </label>
-
-                        <select
-                            id="destination"
-                            class="form-select">
-
-                            <option value="">
-                                Select a destination
-                            </option>
-
-                            <option value="Bali">
-                                Bali
-                            </option>
-
-                            <option value="Paris">
-                                Paris
-                            </option>
-
-                            <option value="Switzerland">
-                                Switzerland
-                            </option>
-
-                            <option value="Maldives">
-                                Maldives
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="mb-3">
-
-                        <label for="message" class="form-label">
-                            Message
-                        </label>
-
-                        <textarea
-                            id="message"
-                            class="form-control"
-                            rows="4"
-                            placeholder="Tell us about your trip"></textarea>
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="btn submit-btn">
-
-                        Submit Booking ✈️
-
-                    </button>
-
-                </form>
-
-
-                <div
-                    id="successMessage"
-                    class="success-message">
-
-                    🎉 Your booking request was submitted
-                    successfully!
-
-                </div>
-
-            </div>
+            <a href="packages.html" class="btn explore-btn">
+                View Packages
+            </a>
 
         </div>
 
@@ -502,9 +200,7 @@
 
     <footer>
 
-        <p>
-            ✈️ TravelGo
-        </p>
+        <p>✈️ TravelGo</p>
 
         <small>
             Explore • Travel • Enjoy 🌎
@@ -513,9 +209,7 @@
     </footer>
 
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="script.js"></script>
 
